@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.vitest/
+
+.env
+.env.*
+!.env.example
+
+.semantic-code-search/
+
+*.log
+*.tmp

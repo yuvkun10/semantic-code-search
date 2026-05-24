@@ -1,0 +1,36 @@
+{
+  "name": "semantic-code-search",
+  "version": "0.1.0",
+  "description": "A TypeScript CLI for semantic and code-token hybrid search over local repositories.",
+  "type": "module",
+  "bin": {
+    "semantic-code-search": "./dist/cli.js",
+    "scs": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    ".env.example"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "ignore": "^7.0.5",
+    "openai": "^6.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}
