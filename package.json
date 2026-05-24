@@ -15,6 +15,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "dev": "tsx src/cli.ts",
+    "deps:audit": "npm audit --audit-level=moderate",
+    "deps:outdated": "npm outdated",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
@@ -22,15 +24,15 @@
     "node": ">=20"
   },
   "dependencies": {
-    "commander": "^14.0.2",
-    "dotenv": "^17.2.3",
+    "commander": "^14.0.3",
+    "dotenv": "^17.4.2",
     "ignore": "^7.0.5",
-    "openai": "^6.9.1"
+    "openai": "^6.39.0"
   },
   "devDependencies": {
-    "@types/node": "^24.10.1",
-    "tsx": "^4.20.6",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.14"
+    "@types/node": "^25.9.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7"
   }
 }
