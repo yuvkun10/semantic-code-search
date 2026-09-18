@@ -1,0 +1,14 @@
+flowchart LR
+    A[Run index command] --> B[Walk repository]
+    B --> C[Apply gitignore and scsignore rules]
+    C --> D[Skip unsafe or oversized files]
+    D --> E[Chunk source by symbol or file ranges]
+    E --> F[Create embeddings]
+    F --> G[Write local JSON index]
+    H[Run search query] --> I[Embed query]
+    I --> J[Score semantic similarity]
+    H --> K[Extract code tokens]
+    K --> L[Score token overlap]
+    J --> M[Hybrid ranker]
+    L --> M
+    M --> N[Return paths snippets and scores]

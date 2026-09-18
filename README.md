@@ -1,6 +1,6 @@
 # Semantic Code Search
 
-Semantic Code Search is a TypeScript CLI for indexing a local repository and finding code by meaning, not just by exact text. It combines OpenAI embeddings with code-token overlap so a query like "where invoices are deduplicated" can surface relevant functions, classes, file chunks, and snippets even when the code uses different wording.
+Semantic Code Search is a TypeScript CLI for indexing a local repository and finding code by meaning as well as by exact text. It combines OpenAI embeddings with code-token overlap so a query like "where invoices are deduplicated" can surface relevant functions, classes, file chunks, and snippets even when the code uses different wording.
 
 Use `--provider hash` for deterministic offline demos and tests, or use the default OpenAI provider for real semantic search over your own codebase.
 
@@ -38,6 +38,8 @@ flowchart LR
     L --> M
     M --> N[Return paths snippets and scores]
 ```
+
+Diagram source: [docs/architecture.mmd](docs/architecture.mmd).
 
 ### Indexing
 
